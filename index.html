@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Finance Tracker</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Personal Finance Tracker</h1>
+
+  <div id="balance">
+    <h2>Current Balance:</h2>
+    <p id="balanceAmount">$0.00</p>
+  </div>
+
+  <form id="transactionForm">
+    <input type="text" id="descriptionInput" placeholder="Description" required>
+    <input type="number" id="amountInput" step="0.01" placeholder="Amount" required>
+    <select id="typeSelect" required>
+      <option value="income">Income</option>
+      <option value="expense">Expense</option>
+    </select>
+    <button type="submit">Add Transaction</button>
+  </form>
+
+  <div id="transactionList"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
